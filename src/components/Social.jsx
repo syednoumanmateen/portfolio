@@ -1,4 +1,5 @@
 import React from 'react'
+import { memo } from 'react'
 import { FaGithub, FaLinkedin, FaMobile, FaTwitter } from 'react-icons/fa'
 
 const Social = ({className}) => {
@@ -13,4 +14,4 @@ const Social = ({className}) => {
     )
 }
 
-export default Social
+export default memo(Social)

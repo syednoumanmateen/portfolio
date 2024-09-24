@@ -1,11 +1,13 @@
 import { memo, useState } from 'react';
 import { Link } from 'react-scroll';
-import Social from './components/Social';
+import Social from '../components/Social';
 import { FaMobile } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
+import { useTheme } from '../context/Theme';
 
 const Home = () => {
     const [role, setRole] = useState("Web")
+    const { theme } = useTheme()
 
     setInterval(() => {
         setRole(prev => prev === "Web" ? "Software" : "Web")
@@ -50,11 +52,11 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="container mb-3">
-                            <button onClick={() => handleDownload()} className='text-dark btn  rounded-pill btn-outline-light border-dark me-3'>
+                            <button onClick={() => handleDownload()} className={`btn ${theme==="dark"?"btn-outline-light":"btn-outline-dark"}  rounded-pill  me-3`}>
                                 Download CV
                             </button>
 
-                            <Link className='text-light rounded-pill btn btn-dark' to="contact" smooth={true} duration={500}>Contact</Link>
+                            <Link  className={`btn ${theme==="dark"?"text-dark btn-light":"text-light btn-dark"} rounded-pill`} to="contact" smooth={true} duration={500}>Contact</Link>
                         </div>
                         <Social />
                     </div>

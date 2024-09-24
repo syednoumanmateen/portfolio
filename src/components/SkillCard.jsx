@@ -1,4 +1,5 @@
 import React from 'react'
+import { memo } from 'react'
 
 const SkillCard = ({ icon, title }) => {
     return (
@@ -15,4 +16,4 @@ const SkillCard = ({ icon, title }) => {
     )
 }
 
-export default SkillCard
+export default memo(SkillCard)

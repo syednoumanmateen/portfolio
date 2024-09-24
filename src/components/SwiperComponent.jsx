@@ -3,15 +3,14 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay'
 import { Navigation, Autoplay } from 'swiper/modules';
 import { Swiper } from 'swiper/react';
+import { memo } from 'react';
 
-const SwiperComponent = ({ children }) => {
-    const isMobile = window.innerWidth < 768;
-
+const SwiperComponent = ({ children, slidesPerView }) => {
     return (
         <Swiper className='mb-3'
             modules={[Navigation, Autoplay]}
             spaceBetween={50}
-            slidesPerView={isMobile ? 1 : 3}
+            slidesPerView={slidesPerView}
             navigation
             autoplay={{ delay: 2000, disableOnInteraction: false }}
         >
@@ -20,4 +19,4 @@ const SwiperComponent = ({ children }) => {
     );
 };
 
-export default SwiperComponent;
+export default memo(SwiperComponent);

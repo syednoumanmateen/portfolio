@@ -3,6 +3,9 @@ import { SwiperSlide } from 'swiper/react'
 import Header from '../components/Header'
 import ProjectCard from '../components/ProjectCard'
 import SwiperComponent from '../components/SwiperComponent'
+import { memo } from 'react'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 const Projects = () => {
     const ProjectsList = [{
@@ -55,12 +58,14 @@ const Projects = () => {
         link: "https://github.com/syednoumanmateen/haven"
     }]
 
+    const isMobile = window.innerWidth < 768
+
     return (
         <div className="container">
             <div className="">
                 <Header title="Projects" />
             </div>
-            <SwiperComponent className="row g-2 align-items-center p-0">
+            <SwiperComponent className="row g-2 align-items-center p-0" slidesPerView={isMobile ? 1 : 3}>
                 {ProjectsList.map(ele => (
                     <SwiperSlide key={ele.title} className="col-lg-4 col-12 ">
                         <ProjectCard img={ele.img} title={ele.title} link={ele.link} />
@@ -71,4 +76,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default memo(Projects)

@@ -10,6 +10,8 @@ import { BiLogoMongodb } from 'react-icons/bi'
 import { SiExpress, SiRedux, SiTypescript } from 'react-icons/si'
 import { DiJqueryLogo } from 'react-icons/di'
 import { IoLogoJavascript } from 'react-icons/io'
+import { scroller } from 'react-scroll'
+import { memo } from 'react'
 
 const Skills = () => {
     const skillsList = [{
@@ -79,7 +81,14 @@ const Skills = () => {
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
     const currentItems = skillsList.slice(indexOfFirstItem, indexOfLastItem);
 
-    const paginate = (pageSet) => setCurrentPage(pageSet)
+    const paginate = (pageSet) => {
+        scroller.scrollTo("skill", {
+            duration: 800,
+            delay: 0,
+            smooth: 'easeInOutQuart',
+        });
+        setCurrentPage(pageSet)
+    }
 
     return (
         <div className="container">
@@ -98,4 +107,4 @@ const Skills = () => {
     )
 }
 
-export default Skills
+export default memo(Skills)

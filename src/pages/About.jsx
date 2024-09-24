@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import AboutCard from '../components/AboutCard'
 import { GiAchievement, GiSandsOfTime } from 'react-icons/gi'
 import Social from '../components/Social'
+import { memo } from 'react'
 
 const About = () => {
     return (
@@ -47,4 +48,4 @@ const About = () => {
     )
 }
 
-export default About
+export default memo(About)
