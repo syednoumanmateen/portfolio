@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
 
 .nav a:active,
 .nav a:hover {
-  border-bottom: 2px solid var(--color);
+  border-bottom: 2px solid black;
 }
 
 .section {
@@ -88,12 +88,6 @@ a {
 .aboutPro {
   border-radius: 25px;
   width: 320px;
-}
-
-.brd-rad {
-  border: 1px solid var(--dark);
-  border-radius: 10px;
-  padding: 5px;
 }
 
 .contact {
@@ -174,7 +168,6 @@ a {
 
 .page-link {
   background-color: var(--page);
-  border: 1px solid var(--bg);
   color: var(--page-color);
 }
 
