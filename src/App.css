@@ -91,7 +91,7 @@ a {
 }
 
 .contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));/*,url("portfolio/src/assets/2.jpg");*/
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("portfolio/src/assets/2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -143,7 +143,7 @@ a {
   }
 
   .contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));/*,url("portfolio/src/assets/4.png");*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("portfolio/src/assets/4.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: max-content;
