@@ -15,9 +15,7 @@ import { useEffect } from 'react';
 const App = () => {
   const { theme, themeToggler } = useTheme()
 
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme])
+  useEffect(() => { document.documentElement.setAttribute('data-theme', theme) }, [theme])
 
   return (
     <div id='main'>
