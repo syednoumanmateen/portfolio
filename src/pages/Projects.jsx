@@ -6,56 +6,52 @@ import SwiperComponent from '../components/SwiperComponent'
 import { memo } from 'react'
 
 const Projects = () => {
-    const ProjectsList = [{
-        img: "./src/assets/dynamic api.png",
-        title: "Dynamic API",
-        link: "https://github.com/syednoumanmateen/vismaya"
-    }, {
-        img: "./src/assets/kudos.png",
-        title: "Employee Appraisal",
-        link: "https://github.com/syednoumanmateen/tmb"
-    }, {
-        img: "./src/assets/tic-tac-toe.png",
+    const ProjectsList = [ {
+        img: "https://res.cloudinary.com/dz4lki63f/image/upload/v1731785590/tic-tac-toe_tpq4jq.png",
         title: "tic-tac-toe",
         link: "https://github.com/syednoumanmateen/tic-tac-toe"
     }, {
-        img: "./src/assets/movix.png",
+        img: "https://res.cloudinary.com/dz4lki63f/image/upload/v1731785592/movix_gb2xi7.png",
         title: "Movix",
         link: "https://github.com/syednoumanmateen/movix"
     }, {
-        img: "./src/assets/odyssey.png",
+        img: "https://res.cloudinary.com/dz4lki63f/image/upload/v1731785592/odyssey_uok6pj.png",
         title: "Odyssey",
         link: "https://github.com/syednoumanmateen/odyssey"
     }, {
-        img: "./src/assets/tasteeat.png",
+        img: "https://res.cloudinary.com/dz4lki63f/image/upload/v1731785591/tasteeat_vcicol.png",
         title: "Tasteat",
         link: "https://github.com/syednoumanmateen/tasteat"
     }, {
-        img: "./src/assets/blog.png",
+        img: "",
         title: "TODO",
-        link: "https://github.com/syednoumanmateen/todo-app"
+        link: ""
     }, {
-
-        title: "Backend Practice",
-        link: "https://github.com/syednoumanmateen/voosh"
+        img: "",
+        title: "Notes",
+        link: ""
+    },{
+        img: "",
+        title: "Blog",
+        link: ""
+    },{
+        img: "",
+        title: "Weather",
+        link: ""
     }, {
 
         title: "MERN Practice",
         link: "https://github.com/syednoumanmateen/fullMernPractice"
     }, {
-        img: "./src/assets/admin-dashboard.png",
+        img: "https://res.cloudinary.com/dz4lki63f/image/upload/v1731785593/admin-dashboard_cfkzxo.png",
         title: "Admin Dashboard",
         link: "https://github.com/syednoumanmateen/admindashboard"
     }, {
-        img: "./src/assets/expens1.png",
-        title: "Meals",
-        link: "https://github.com/syednoumanmateen/meals"
-    }, {
-        img: "./src/assets/haven.png",
+        img: "https://res.cloudinary.com/dz4lki63f/image/upload/v1731785592/haven_hedpgf.png",
         title: "Haven",
         link: "https://github.com/syednoumanmateen/haven"
     }, {
-        img: "./src/assets/portfolio.png",
+        img: "https://res.cloudinary.com/dz4lki63f/image/upload/v1731785591/portfolio_k6hfg3.png",
         title: "Portfolio",
         link: "https://github.com/syednoumanmateen/portfolio"
     }]

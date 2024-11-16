@@ -1,76 +1,98 @@
-import React, { useState } from 'react'
-import Header from '../components/Header'
-import SkillCard from '../components/SkillCard'
-import Pagination from '../components/Pagination'
-import { FaAws, FaBootstrap, FaCode, FaCss3, FaHtml5, FaNode, FaNpm, FaReact, FaUniversalAccess } from 'react-icons/fa'
-import { MdDevicesOther } from 'react-icons/md'
-import { BsTerminalFill } from 'react-icons/bs'
+import React, { memo, useState } from 'react'
+import { BiLogoMongodb, BiLogoTailwindCss, BiLogoTypescript } from 'react-icons/bi'
+import { FaAws, FaBootstrap, FaCode, FaCss3, FaGitAlt, FaGithub, FaHtml5, FaJira, FaJs, FaNode, FaNpm, FaReact, FaSass, FaSlack } from 'react-icons/fa'
+import { FaGitlab } from 'react-icons/fa6'
+import { GiCoffeeCup } from 'react-icons/gi'
+import { SiExpress, SiMocha, SiMongoose, SiReactrouter, SiRedux } from 'react-icons/si'
 import { TbCloudCog } from 'react-icons/tb'
-import { BiLogoMongodb } from 'react-icons/bi'
-import { SiExpress, SiRedux, SiTypescript } from 'react-icons/si'
-import { DiJqueryLogo } from 'react-icons/di'
-import { IoLogoJavascript } from 'react-icons/io'
+import { VscVscode } from 'react-icons/vsc'
 import { scroller } from 'react-scroll'
-import { memo } from 'react'
+import Header from '../components/Header'
+import Pagination from '../components/Pagination'
+import SkillCard from '../components/SkillCard'
 
 const Skills = () => {
     const skillsList = [{
         icon: <FaHtml5 />,
-        title: "HTML"
+        title: "HTML5"
     }, {
         icon: <FaCss3 />,
-        title: "CSS"
+        title: "CSS3"
     }, {
-        icon: <IoLogoJavascript />,
+        icon: <FaSass />,
+        title: "SASS"
+    }, {
+        icon: <FaBootstrap />,
+        title: "Bootstrap"
+    }, {
+        icon: <BiLogoTailwindCss />,
+        title: "Tailwind"
+    }, {
+        icon: <FaJs />,
         title: "JavaScript(ES6+)"
     }, {
         icon: <FaCode />,
-        title: "DataStructure"
+        title: "DSA"
     }, {
-        icon: <SiTypescript />,
+        icon: <BiLogoTypescript />,
         title: "TypeScript"
     }, {
         icon: <FaReact />,
-        title: "React"
+        title: "React.js"
     }, {
         icon: <SiRedux />,
         title: "Redux"
     }, {
+        icon: <SiReactrouter />,
+        title: "React Router"
+    }, {
         icon: <FaNode />,
-        title: "Node"
+        title: "Node.js"
     }, {
         icon: <SiExpress />,
-        title: "Express"
+        title: "Express.js"
     }, {
         icon: <BiLogoMongodb />,
         title: "Mongo DB"
     }, {
-        icon: <DiJqueryLogo />,
-        title: "jQuery"
+        icon: <SiMongoose />,
+        title: "Mongoose"
     }, {
         icon: <TbCloudCog />,
         title: "REST APIS"
     }, {
-        icon: <BsTerminalFill />,
+        icon: <FaAws />,
+        title: "AWS (EC2, S3, Lambda)"
+    }, {
+        icon: <FaGitAlt />,
         title: "Git"
     }, {
-        icon: <BsTerminalFill />,
-        title: "Terminal"
+        icon: <FaGithub />,
+        title: "GitHub"
     }, {
-        icon: <MdDevicesOther />,
-        title: "ResponsiveDesign"
+        icon: <FaGitlab />,
+        title: "GitLab"
     }, {
-        icon: <FaUniversalAccess />,
-        title: "Accessibility"
+        icon: <FaGitlab />,
+        title: "GitLab CI"
+    }, {
+        icon: <SiMocha />,
+        title: "Mocha"
+    }, {
+        icon: <GiCoffeeCup />,
+        title: "Chai"
     }, {
         icon: <FaNpm />,
         title: "npm"
     }, {
-        icon: <FaAws />,
-        title: "aws"
+        icon: <FaJira />,
+        title: "Jira"
     }, {
-        icon: <FaBootstrap />,
-        title: "Bootstrap"
+        icon: <FaSlack />,
+        title: "Slack"
+    }, {
+        icon: <VscVscode />,
+        title: "Vscode"
     }
     ]
 
