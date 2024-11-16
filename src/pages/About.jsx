@@ -19,8 +19,8 @@ const About = () => {
                     <div className="row g-3 p-0 fs-6 mb-4">
                         <div className="col-lg-6 col-md-12 col-sm-12">
                             <AboutCard icon={<GiAchievement className='display-5 mx-2' />}>
-                                <span className="fw-bold">Experience (2+)</span><br />
-                                FrontEnd (React)(2+),<br />BackEnd (Node,Express) (2+).
+                                <span className="fw-bold">Experience (3+)</span><br />
+                                FrontEnd (React),<br />BackEnd (Node,Express).
                             </AboutCard>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
