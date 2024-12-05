@@ -39,7 +39,7 @@ const Home = () => {
                             Syed Nouman Mateen
                         </div>
                         <div className="fs-4 mb-4">
-                            Full-Stack  <span className='fw-bold'>{role}</span> Developer
+                            <span className='fw-bold'>{role}</span> Developer
                         </div>
                         <div className="container mb-3 fs-6">
                             <div className="row g-1">

@@ -6,7 +6,7 @@ const AboutCard = ({ children, icon }) => {
 
     return (
         <>
-            <div className={`border border-1 rounded ${theme==="dark"?"border-light":"border-dark"} text-center p-3`}>
+            <div className={`border border-1 rounded ${theme==="dark"?"border-light":"border-dark"} text-center p-3`} style={{height:"145px"}}>
                 <div className="row">
                     <div className="col-12 mb-2">
                         {icon}
