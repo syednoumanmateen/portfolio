@@ -46,6 +46,9 @@ const Skills = () => {
         icon: <SiReactrouter />,
         title: "React Router"
     }, {
+        icon: <FaReact />,
+        title: "React-Native"
+    },{
         icon: <FaNode />,
         title: "Node.js"
     }, {
@@ -81,6 +84,9 @@ const Skills = () => {
     }, {
         icon: <GiCoffeeCup />,
         title: "Chai"
+    },  {
+        icon: <FaCode />,
+        title: "Jest"
     }, {
         icon: <FaNpm />,
         title: "npm"

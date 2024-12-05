@@ -13,7 +13,7 @@ const About = () => {
             </div>
             <div className="row g-3 align-items-center p-0">
                 <div className="col-lg-4 col-md-12 col-sm-12 text-center">
-                    <img src="https://res.cloudinary.com/dz4lki63f/image/upload/v1731785593/3_lp92ws.jpg" alt="" className='aboutPro' />
+                    <img src="https://res.cloudinary.com/dz4lki63f/image/upload/v1731785593/4_xjo1oz.png" alt="" className='aboutPro' />
                 </div>
                 <div className="col-lg-8 col-md-12 col-sm-12">
                     <div className="row g-3 p-0 fs-6 mb-4">
